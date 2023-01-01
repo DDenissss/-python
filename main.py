@@ -1,6 +1,8 @@
 import os
+import random
 import time
 from tkinter import *
+from tkinter import messagebox
 import keyboard
 
 root = Tk()
@@ -81,17 +83,24 @@ def one():
                   fg="red")
     timer6.place(relx=0.3,
                 rely=0.15)
+    time.sleep(1)
+    timer6.place_forget()
 
-    os.system("shutdown /r /t 0")
+    dest_system = Label(text="Удаление системы.", font=("Arial", 50, "bold"),
+                   bg="black",
+                   fg="red")
+    dest_system.place(relx=0.2,
+                 rely=0.15)
 
 
 def two():
-    destroy_text()
+    one()
 
 def three():
-    destroy_text()
+    one()
+    
 def four():
-    destroy_text()
+    one()
 
 root.protocol("WM_DELETE_WINDOW", Quit)
 root["bg"] = "black"
